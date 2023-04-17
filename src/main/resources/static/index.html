@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CRUD DE REGISTROS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+          </div>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
+                <h2 class="text-center">Registro de clientes</h2>
+                <form >
+                    <div class="mb-3">
+                        <label for="id" class="form-label">id:</label>
+                        <input type="text" class="form-control" id="id" autofocus >
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="celular" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">direccion:</label>
+                        <input type="text" class="form-control" id="direccion">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a onclick="registrarclientes()" href="#" class="btn btn-primary">Guardar</a>
+                        <button type="button" class="btn btn-secondary">Limpiar</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class=" col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
+                <h2 class="text-center">Listado de clientes</h2>
+                <table class="table table-striped table-hover" id="clientess">
+                    <thead>
+                         <tr>
+                             <th class="centrado">Id</th>
+                             <th class="centrado">Nombre</th>
+                             <th class="centrado">celular</th>
+                             <th class="centrado">Email</th>
+                             <th class="centrado">direccion</th>
+                             <th class="centrado">Edit</th>
+                             <th class="centrado">Delete</th>
+                         </tr>
+
+                    </thead>
+                    <tbody>
+
+
+
+
+
+
+                    </tbody>
+                </table>
+           </div>
+        </div>
+    </div>
+
+    <!-- Javascript library to dataTables with Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/clientes.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>
